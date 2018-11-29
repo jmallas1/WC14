@@ -4,11 +4,13 @@ public class ShapeMaker {
     private Shape circle;
     private Shape rectangle;
     private Shape square;
+    private Shape line;
 
     public ShapeMaker() {
         circle = new Circle();
         rectangle = new Rectangle();
         square = new Square();
+        line = new Line();
     }
 
     public void drawCircle(){
@@ -19,5 +21,8 @@ public class ShapeMaker {
     }
     public void drawSquare(){
         square.draw();
+    }
+    public void drawLine(){
+        line.draw();
     }
 }
