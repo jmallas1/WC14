@@ -8,6 +8,11 @@ public abstract class BookReader {
     public final void readBook() {
         initialize();
         startReading();
-        stopReading();
+        if(!isInteractive())
+        {
+            stopReading();
+        }
     }
+
+    public boolean isInteractive() { return false; }
 }
