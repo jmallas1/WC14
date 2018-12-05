@@ -17,6 +17,8 @@ public class Main {
 
         // Add a new facade (AdaptiveShapeMaker) which will take in
         // the coords and draw the shapes via their adapters.
+        AdaptiveShapeMaker asm = new AdaptiveShapeMaker(1, 1, 10, 10);
+        asm.drawAllShapes();
     }
 }
 
